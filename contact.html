@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Contact | Lumara Partners</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      body {
+        font-family: 'Manrope', sans-serif;
+        color: white;
+        text-align: center;
+      }
+
+.contact-wrapper {
+  max-width: 100%;
+  width: 50vw; /* 50% of viewport width */
+  margin: 0 auto;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+/* Logo */
+.contact-logo img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1.5em;
+}
+
+.contact-logo {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+}
+
+/* Remove underline from heading */
+h2 {
+  font-size: 1.75em;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+  border: none;
+  text-decoration: none;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 2em;
+  text-align: left;
+}
+
+label {
+  font-size: 1em;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75em 1em;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white;
+  font-size: 1em;
+}
+
+textarea {
+  height: 160px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  align-self: center;
+  padding: 0.75em 2em;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1.25; /* prevents text from sitting too low */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+button[type="submit"]:hover {
+  background-color: white;
+  color: #023a59ff !important;
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-top: 3em;
+  font-size: 0.9em;
+  text-decoration: underline;
+  color: white;
+}
+
+.back-link:hover {
+  opacity: 0.8;
+}
+    </style>
+  </head>
+  <body class="is-preload">
+    <div class="contact-wrapper">
+      <a href="index.html" class="contact-logo">
+        <img src="images/logo.png" alt="Lumara Partners Logo">
+      </a>
+      <form action="https://formspree.io/f/mqabbyna" method="POST">
+        <label>
+          Your email:
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Your message:
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+
+    </div>
+<footer id="footer" >
+				
+				<ul >
+					<p>&copy; 2025 Lumara Partners.</p>
+				</ul>
+			</footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
